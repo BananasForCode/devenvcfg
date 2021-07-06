@@ -15,6 +15,8 @@ alias gup='git pull --rebase'
 #compdef _git gup=git-fetch
 alias gp='git push'
 #compdef _git gp=git-push
+alias gpu='git push -u'
+#compdef _git gpu=git-push
 alias gd='git diff'
 
 function gdv
@@ -35,13 +37,11 @@ alias gcm='git commit -m'
 alias gcn='git clone'
 #compdef _git gcn=git-clone
 alias gcb='git checkout -b'
-#compdef _git gcb=git-checkout-b
+#compdef _git gcb=git-checkout
 alias gco='git checkout'
 #compdef _git gco=git-checkout
-alias gr='git remote'
+alias gr='git remote -v'
 #compdef _git gr=git-remote
-alias grv='git remote -v'
-#compdef _git grv=git-remote
 alias grmv='git remote rename'
 #compdef _git grmv=git-remote
 alias grrm='git remote remove'
@@ -62,7 +62,8 @@ alias gba='git branch -a'
 #compdef _git gba=git-branch
 alias gcount='git shortlog -sn'
 #compdef gcount=git
-alias gcl='git config --list'
+alias gcfl='git config --list'
+alias gcf='git config'
 alias gcp='git cherry-pick'
 #compdef _git gcp=git-cherry-pick
 alias glg='git log --stat --max-count=10'
